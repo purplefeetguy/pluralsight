@@ -5,45 +5,9 @@
 
   },
   "variables": {
-    "pfl-vnet-templatePrefix": "10.0.0.0/16",
-    "pfl-vnet-templateSubnet1Name": "Subnet-1",
-    "pfl-vnet-templateSubnet1Prefix": "10.0.0.0/24",
-    "pfl-vnet-templateSubnet2Name": "Subnet-2",
-    "pfl-vnet-templateSubnet2Prefix": "10.0.1.0/24"
 
   },
   "resources": [
-    {
-      "name": "pfl-vnet-template",
-      "type": "Microsoft.Network/virtualNetworks",
-      "location": "[resourceGroup().location]",
-      "apiVersion": "2016-03-30",
-      "dependsOn": [ ],
-      "tags": {
-        "displayName": "pfl-vnet-template"
-      },
-      "properties": {
-        "addressSpace": {
-          "addressPrefixes": [
-            "[variables('pfl-vnet-templatePrefix')]"
-          ]
-        },
-        "subnets": [
-          {
-            "name": "[variables('pfl-vnet-templateSubnet1Name')]",
-            "properties": {
-              "addressPrefix": "[variables('pfl-vnet-templateSubnet1Prefix')]"
-            }
-          },
-          {
-            "name": "[variables('pfl-vnet-templateSubnet2Name')]",
-            "properties": {
-              "addressPrefix": "[variables('pfl-vnet-templateSubnet2Prefix')]"
-            }
-          }
-        ]
-      }
-    }
 
   ],
   "outputs": {
