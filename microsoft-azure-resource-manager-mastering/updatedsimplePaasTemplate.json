@@ -5,7 +5,7 @@
     "serverFarmName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "pflpldeepdive"
+      "defaultValue": "pflpldeepdivetemplate"
     },
     "serverFarmSkuName": {
       "type": "string",
@@ -31,7 +31,7 @@
 
   },
   "variables": {
-    "webAppName": "[concat('pflpldeepdive', uniqueString(resourceGroup().id))]"
+    "webAppName": "[concat('pflpldeepdivetemplate', uniqueString(resourceGroup().id))]"
 
   },
   "resources": [
